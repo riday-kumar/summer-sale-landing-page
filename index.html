@@ -11,9 +11,216 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="tailwind.config.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 class="bg-red-500 text-center">hi .this is test</h1>
+  <body class="font-work-sans bg-[#f8f8f8]">
+    <header class="bg-gradient-to-b from-[#ffffff] to-[#f6ddea]">
+      <!-- logo -->
+      <div
+        class="flex justify-center items-center py-3 border-b-2 border-gray-300"
+      >
+        <img src="./assets/logo.png" class="w-20" alt="" />
+        <div>
+          <h1 class="pinky font-semibold text-5xl">
+            Deshi <span class="font-bold">Deals</span>
+          </h1>
+          <h6 class="text-gray-600">Cheap Price , Best Quality</h6>
+        </div>
+      </div>
+      <!-- banner -->
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="pt-38 pb-6 text-6xl font-bold text-center leading-20">
+          Purchase TK 200 or above & get <br />
+          <span class="pinky-deep">20% off</span>
+        </h2>
+        <div class="flex items-center gap-20">
+          <p class="text-2xl font-medium">Use Promo Code</p>
+          <button class="btn btn-secondary w-[270px] bg-[#e527b2]">
+            SELL200
+          </button>
+        </div>
+        <div class="-mt-[125px]">
+          <img src="./assets/hero-bg.png" class="relative top-[125px]" alt="" />
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <section class="pt-40 grid grid-cols-12 gap-14 w-11/12 mx-auto">
+        <div class="col-span-9">
+          <!-- kitchenware -->
+          <div class="mb-10">
+            <h4 class="text-4xl font-semibold mb-5">Kitchenware</h4>
+            <div class="grid grid-cols-3 gap-5">
+              <div class="card p-5 bg-base-100 shadow-sm">
+                <figure class="bg-[#1111110d] h-[200px] rounded-lg">
+                  <img src="./assets/kitchen-1.png" alt="Shoes" />
+                </figure>
+                <div class="card-body text-center">
+                  <p class="text-center">⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title mx-auto">Spoon</h2>
+                  <p class="text-[20px]">200.00 TK</p>
+                  <div>
+                    <button class="btn btn-primary pinky-bg-deep w-full">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-5 bg-base-100 shadow-sm">
+                <figure class="bg-[#1111110d] h-[200px] rounded-lg">
+                  <img src="./assets/kitchen-2.png" alt="Shoes" />
+                </figure>
+                <div class="card-body text-center">
+                  <p class="text-center">⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title mx-auto">Machine</h2>
+                  <p class="text-[20px]">150.00 TK</p>
+                  <div class="">
+                    <button class="btn btn-primary pinky-bg-deep w-full">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-5 bg-base-100 shadow-sm">
+                <figure class="bg-[#1111110d] h-[200px] rounded-lg">
+                  <img src="./assets/kitchen-3.png" alt="Shoes" />
+                </figure>
+                <div class="card-body text-center">
+                  <p class="text-center">⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title mx-auto">Cooker</h2>
+                  <p class="text-[20px]">500.00 TK</p>
+                  <div class="">
+                    <button class="btn btn-primary pinky-bg-deep w-full">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SportsWare -->
+          <div class="mb-10">
+            <h4 class="text-4xl font-semibold mb-5">Sportswear</h4>
+            <div class="grid grid-cols-3 gap-5">
+              <div class="card p-5 bg-base-100 shadow-sm">
+                <figure class="bg-[#1111110d] h-[200px] rounded-lg">
+                  <img src="./assets/sports-1.png" alt="Shoes" />
+                </figure>
+                <div class="card-body text-center">
+                  <p class="text-center">⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title mx-auto">Cap</h2>
+                  <p class="text-[20px]">150.00 TK</p>
+                  <div>
+                    <button class="btn btn-primary pinky-bg-deep w-full">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-5 bg-base-100 shadow-sm">
+                <figure class="bg-[#1111110d] h-[200px] rounded-lg">
+                  <img src="./assets/sports-2.png" alt="Shoes" />
+                </figure>
+                <div class="card-body text-center">
+                  <p class="text-center">⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title mx-auto">Jersey</h2>
+                  <p class="text-[20px]">500.00 TK</p>
+                  <div class="">
+                    <button class="btn btn-primary pinky-bg-deep w-full">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card p-5 bg-base-100 shadow-sm">
+                <figure class="bg-[#1111110d] h-[200px] rounded-lg">
+                  <img src="./assets/sports-3.png" alt="Shoes" />
+                </figure>
+                <div class="card-body text-center">
+                  <p class="text-center">⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title mx-auto">Shoes</h2>
+                  <p class="text-[20px]">2000.00 TK</p>
+                  <div class="">
+                    <button class="btn btn-primary pinky-bg-deep w-full">
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar for showing price and coupon -->
+        <aside class="col-span-3">
+          <!-- coupon div -->
+          <div class="p-4 mb-10 bg-white rounded-lg">
+            <h4 class="text-xl mb-3 font-medium">Have Coupon?</h4>
+            <form action="#">
+              <input
+                type="text"
+                class="w-full h-[55px] pl-3 relative font-medium border-2 border-[#11111126]"
+                placeholder="Coupon code"
+              />
+              <button
+                class="h-[55px] w-28 absolute right-20 pinky-bg-deep font-bold border-2 border-[#e527b2]"
+              >
+                Apply
+              </button>
+            </form>
+          </div>
+          <!-- selected Product and price -->
+          <div class="py-10 px-4 bg-white rounded-xl">
+            <!-- selected Product -->
+            <div class="selected-product">
+              <div
+                class="bg-[#f4f1f1] flex justify-between items-center p-2 mb-5 rounded-lg"
+              >
+                <img src="./assets/kitchen-1.png" class="h-28 w-24" alt="" />
+                <div>
+                  <p class="text-[20px] font-bold">K.Accessories</p>
+                  <p class="pt-2 text-[20px] text-[#11111180] font-medium">
+                    150.00 TK
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-[#f4f1f1] flex justify-between items-center p-2 mb-5 rounded-lg"
+              >
+                <img src="./assets/kitchen-1.png" class="h-28 w-24" alt="" />
+                <div>
+                  <p class="text-[20px] font-bold">K.Accessories</p>
+                  <p class="pt-2 text-[20px] text-[#11111180] font-medium">
+                    150.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- price -->
+            <div class="price">
+              <hr />
+              <br />
+              <p class="font-medium text-2xl pb-3">
+                Total Price: <span class="text-[#11111180]">300.00</span>
+                <span class="text-[#11111180]">Tk</span>
+              </p>
+              <p class="font-medium text-2xl pb-3">
+                Discount: <span class="text-[#11111180]">30.00</span>
+                <span class="text-[#11111180]">Tk</span>
+              </p>
+              <p class="font-medium text-2xl pb-3">
+                Total: <span class="text-[#11111180]">270.00</span>
+                <span class="text-[#11111180]">Tk</span>
+              </p>
+              <br />
+              <hr />
+              <br />
+              <button class="btn pinky-bg-deep w-full">Make Purchase</button>
+            </div>
+          </div>
+          <!-- price -->
+        </aside>
+      </section>
+    </main>
     <script src="./js/script.js"></script>
   </body>
 </html>
