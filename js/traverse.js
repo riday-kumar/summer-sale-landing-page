@@ -7,10 +7,13 @@ function getEleCls(cls) {
   return elementClasses;
 }
 
-// Delegation
-getEleId("product-box").addEventListener("click", function (e) {
-  if (e.target.className.includes("btn-buy")) {
-    const getAllButton = e.target;
+// I have used same cls for all the buy now button . for getting this I am using for of loop
+// Traverse Technique  ,
+
+const getAllButtons = getEleCls("btn-buy");
+
+for (const getAllButton of getAllButtons) {
+  getAllButton.addEventListener("click", function () {
     // get total price from the html page
     let totalPrice = Number(getEleId("total-price").innerText);
     let proQuantity = Number(getEleId("quantity").innerText);
@@ -60,13 +63,5 @@ getEleId("product-box").addEventListener("click", function (e) {
     if (proQuantity == 1) {
       getEleId("btn-clear").style.display = "block";
     }
-  }
-});
-
-getEleId("btn-clear").addEventListener("click", function () {
-  alert("Are You Sure?");
-  getEleId("selected-product").innerHTML = "";
-  getEleId("quantity").innerText = "0";
-  getEleId("total-price").innerText = "0";
-  this.style.display = "none";
-});
+  });
+}
